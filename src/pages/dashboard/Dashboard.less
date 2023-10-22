@@ -1,0 +1,48 @@
+@import "/src/assets/css/AdminVars";
+
+//Dashboard Header
+.change-dashboard-page-header {
+  display: flex;
+  padding: 20px;
+  box-shadow: 0 2px 5px @change-border-color;
+  border-bottom: 1px solid @change-border-color;
+
+  // Header 左边
+  .change-left {
+    display: flex;
+    margin-right: auto;
+
+    //
+    .change-info {
+      height: 60px;
+      padding-left: 15px;
+
+      // 欢迎信息
+      .change-welcome {
+        font-size: 18px;
+        font-weight: bold;
+        height: 35px;
+        line-height: 35px;
+      }
+
+      // 用户说明
+      .change-desc {
+        color: rgba(0, 0, 0, .45);
+        height: 25px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  // Header 右边
+  .change-right {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+
+
+
+

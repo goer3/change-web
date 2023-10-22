@@ -1,8 +1,13 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import RouteList from '/src/router/Route.jsx';
 
-// 入口
 const App = () => {
-  return <>App</>;
+  return (
+    <BrowserRouter>
+      <RouteList />
+    </BrowserRouter>
+  );
 };
 
 export default App;
