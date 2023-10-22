@@ -1,18 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import less from 'less';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    less({
-      javascriptEnabled: true,
-    }),
-  ],
+  plugins: [react()],
   server: {
     host: '0.0.0.0',
-    port: 9000,
+    port: 10000,
     open: true,
   },
   css: {
