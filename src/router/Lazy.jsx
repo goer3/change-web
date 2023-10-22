@@ -1,10 +1,10 @@
 import React, { Suspense } from 'react';
-import { Spin } from 'antd'; // 加载中显示内容
+import { Spin } from 'antd';
 
 // loading 内容
 const Loading = () => {
   return (
-    <div className="admin-data-loading">
+    <div style={{ position: 'absolute', top: '50%', left: '50%' }}>
       <Spin tip="Loading..." />
     </div>
   );

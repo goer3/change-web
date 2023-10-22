@@ -1,6 +1,6 @@
 import React from 'react';
 import DashboardHeader from './DashboardHeader.jsx';
-import './Dashboard.less';
+import '/src/assets/css/Dashboard.less';
 
 // 仪表盘工作台
 const Dashboard = () => {

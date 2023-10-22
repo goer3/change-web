@@ -1,0 +1,121 @@
+@import "/src/assets/css/AdminVars";
+
+// 全局样式
+* {
+  font-family: MiSans, serif;
+  color: @change-menu-font-color;
+}
+
+// Layout 样式
+// Header
+.change-layout-header {
+  padding: 0 10px;
+  background: #fff;
+  height: @change-header-height;
+  line-height: @change-header-height;
+  box-shadow: 0 2px 5px @change-border-color;
+  border-bottom: 1px solid @change-border-color;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  // Header 左边
+  .change-header-left {
+    height: @change-header-height;
+    line-height: @change-header-height;
+
+    // Logo
+    .change-logo {
+      height: 25px;
+      user-select: none;
+    }
+  }
+
+  // Header 右边
+  .change-header-right {
+    height: @change-header-height;
+    line-height: @change-header-height;
+    margin: 0 20px;
+
+    // 头像
+    .change-avatar {
+      height: @change-header-height;
+      width: @change-header-height;
+      padding: 12px;
+
+      img {
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+// 主体部分
+.change-main {
+
+  // 侧边菜单栏
+  .change-sider {
+    margin-top: @change-header-height;
+    background: @change-sider-bgcolor;
+    height: calc(100vh - @change-header-height);
+    grid-template-rows: 1fr;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    // 菜单
+    .change-sider-menu {
+      padding: 15px 0;
+      background: @change-sider-bgcolor;
+
+      span {
+        user-select: none;
+      }
+    }
+
+    // 最后一个菜单
+    .change-sider-menu > .ant-menu-item:last-child {
+      margin-bottom: @change-header-height;
+    }
+
+    .ant-menu-sub.ant-menu-inline {
+      background: @change-sider-bgcolor;
+    }
+
+    /* 菜单收缩栏 */
+    .ant-layout-sider-trigger {
+      height: @change-header-height;
+      line-height: @change-header-height;
+      background-color: @change-sider-bgcolor;
+      border-top: 1px solid @change-border-color;
+    }
+
+    /* 收缩后弹出一级菜单样式 */
+    .ant-menu-inline-collapsed-tooltip .ant-tooltip-inner {
+      color: var(--menu-font-color);
+      background-color: #fff;
+    }
+
+    .ant-menu-inline-collapsed-tooltip .ant-tooltip-arrow-content {
+      --antd-arrow-background-color: linear-gradient(to right bottom, #fff, #fff);
+    }
+
+    .ant-layout-sider-trigger * {
+      color: #000;
+    }
+  }
+
+  // 隐藏菜单滚动条
+  .change-sider::-webkit-scrollbar {
+    width: 0 !important;
+  }
+
+  /* 右边主体 */
+  .change-content {
+    background: #ffffff;
+    margin-top: @change-header-height;
+    border-left: 1px solid @change-border-color;
+  }
+}
