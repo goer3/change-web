@@ -45,6 +45,7 @@
     left: 0;
     bottom: 0;
     border-left: 3px solid var(--menu-font-color);
+    /*border-left: 3px solid #0052d9;*/
     transform: scaleY(0.0001);
     opacity: 0;
     transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
