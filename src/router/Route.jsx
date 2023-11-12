@@ -10,6 +10,10 @@ export const RouteData = [
     element: <Navigate to="/dashboard" />,
   },
   {
+    path: '/login', // 登录;
+    element: LazyLoad(React.lazy(() => import('/src/pages/login/Login.jsx'))),
+  },
+  {
     // 后台路由
     path: '/',
     element: <AdminLayout />,
@@ -41,9 +45,7 @@ export const RouteData = [
         children: [
           {
             path: 'department', // 部门管理
-            element: LazyLoad(
-              React.lazy(() => import('/src/pages/system/department/SystemDepartment.jsx')),
-            ),
+            element: LazyLoad(React.lazy(() => import('/src/pages/system/department/SystemDepartment.jsx'))),
           },
           {
             path: 'menu', // 菜单管理
@@ -55,9 +57,7 @@ export const RouteData = [
           },
           {
             path: 'setting', // 服务配置
-            element: LazyLoad(
-              React.lazy(() => import('/src/pages/system/setting/SystemSetting.jsx')),
-            ),
+            element: LazyLoad(React.lazy(() => import('/src/pages/system/setting/SystemSetting.jsx'))),
           },
         ],
       },
