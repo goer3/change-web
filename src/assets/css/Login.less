@@ -5,6 +5,21 @@
   background-image: url("/src/assets/images/background/banner-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-user-drag: none;
+  user-select: none;
+
+  a {
+    color: #003CB2;
+  }
+
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #003CB2;
+    border-color: #003CB2;
+  }
+
+  .ant-checkbox-checked::after {
+    border: 1px solid #003CB2;
+  }
 }
 
 .login-header {
@@ -33,7 +48,7 @@
 
     .login-box-left {
       height: 500px;
-      width: 500px;
+      width: 450px;
 
       img {
         height: 75px;
@@ -51,12 +66,74 @@
 
     .login-box-right {
       height: 500px;
-      width: 300px;
+      width: 350px;
 
       .login-title {
-        padding: 40px 10px;
+        padding: 50px 30px 0 30px;
         font-size: 25px;
         font-weight: bolder;
+      }
+
+      .login-line {
+        margin: 20px 0;
+        width: 290px;
+      }
+
+      .login-form {
+        padding: 0 30px;
+
+        .ant-form-item {
+          margin-bottom: 20px;
+        }
+
+        .ant-input-affix-wrapper {
+          height: 36px;
+          line-height: 36px;
+          border-radius: 0;
+          padding: 0 10px;
+          font-size: 15px;
+        }
+
+        .ant-input-prefix {
+          margin-right: 8px;
+        }
+
+        .login-form-button {
+          height: 36px;
+          line-height: 36px;
+          width: 100%;
+          background-color: #003CB2;
+          margin-bottom: 10px;
+        }
+
+        .ant-btn:active {
+          color: #003CB2;
+          border-color: #003CB2;
+        }
+
+        .ant-btn:hover, .ant-btn:focus {
+          color: #003CB2;
+          border-color: #003CB2;
+        }
+
+        .login-form-button span {
+          color: #ffffff;
+          letter-spacing: 2px;
+          font-size: 15px;
+        }
+
+        .login-code-btn {
+          height: 36px;
+          line-height: 36px;
+          font-size: 15px;
+          background-color: #003CB2;
+          width: 120px;
+          letter-spacing: 2px;
+
+          span {
+            color: #ffffff;
+          }
+        }
       }
     }
   }
@@ -121,7 +198,7 @@
 
 .hero-bg-5 {
   position: absolute;
-  top: 250px;
+  top: 52%;
   right: 20%;
 }
 
