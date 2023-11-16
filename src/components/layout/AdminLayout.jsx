@@ -117,7 +117,7 @@ const AdminLayout = () => {
     <>
       <Layout>
         {/*Header*/}
-        <Header className="change-layout-header">
+        <Header className="change-layout-header" >
           <div className="change-header-left">
             <img src={Logo} className="change-logo" alt="" />
           </div>
