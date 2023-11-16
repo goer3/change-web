@@ -1,4 +1,12 @@
-import { DingtalkOutlined, KeyOutlined, MailOutlined, MessageOutlined, UserOutlined, SafetyOutlined } from '@ant-design/icons';
+import {
+  DingtalkOutlined,
+  KeyOutlined,
+  MailOutlined,
+  MessageOutlined,
+  UserOutlined,
+  SafetyOutlined,
+  InsuranceOutlined
+} from '@ant-design/icons';
 import { Button, Checkbox, Divider, Form, Input, Space } from 'antd';
 import React from 'react';
 import { Logo, LogoGray } from '../../common/Resource.jsx';
@@ -83,35 +91,35 @@ const Login = () => {
                             message: '请输入你的密码!',
                           },
                         ]}>
-                      <Input className="login-input" prefix={<KeyOutlined />} type="password" placeholder="密码" />
+                      <Input.Password className="login-input" prefix={<KeyOutlined />} placeholder="密码" />
                     </Form.Item>
-                    {/*<Form.Item>*/}
-                    {/*  <Input className="login-input" prefix={<SafetyOutlined />} placeholder="VIP ACCESS 验证码" />*/}
-                    {/*</Form.Item>*/}
+                    <Form.Item>
+                      <Input className="login-input" prefix={<InsuranceOutlined />} placeholder="VIP ACCESS 验证码" />
+                    </Form.Item>
                     {/*<Form.Item>*/}
                     {/*  <Space direction="horizontal">*/}
                     {/*    <Input*/}
                     {/*      prefix={<MessageOutlined />}*/}
                     {/*      placeholder="短信验证码"*/}
                     {/*      style={{*/}
-                    {/*        width: '160px',*/}
+                    {/*        width: '170px',*/}
                     {/*      }}*/}
                     {/*    />*/}
                     {/*    <Button className="login-btn login-code-btn">获取验证码</Button>*/}
                     {/*  </Space>*/}
                     {/*</Form.Item>*/}
-                    <Form.Item>
-                      <Space direction="horizontal">
-                        <Input
-                            prefix={<MailOutlined />}
-                            placeholder="邮件验证码"
-                            style={{
-                              width: '170px',
-                            }}
-                        />
-                        <Button className="login-btn login-code-btn">获取验证码</Button>
-                      </Space>
-                    </Form.Item>
+                    {/*<Form.Item>*/}
+                    {/*  <Space direction="horizontal">*/}
+                    {/*    <Input*/}
+                    {/*        prefix={<MailOutlined />}*/}
+                    {/*        placeholder="邮件验证码"*/}
+                    {/*        style={{*/}
+                    {/*          width: '170px',*/}
+                    {/*        }}*/}
+                    {/*    />*/}
+                    {/*    <Button className="login-btn login-code-btn">获取验证码</Button>*/}
+                    {/*  </Space>*/}
+                    {/*</Form.Item>*/}
                     <Form.Item>
                       <Form.Item name="remember" valuePropName="checked" noStyle>
                         <Checkbox>记住密码 |</Checkbox>
